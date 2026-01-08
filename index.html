@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js — Часть 1</title>
+  </head>
+  <body>
+    <div id="ui">
+      <div class="row">
+        <label for="dirIntensity">Интенсивность направленного света</label>
+        <input id="dirIntensity" type="range" min="0" max="5" step="0.01" value="1.5" />
+        <span id="dirIntensityVal">1.50</span>
+      </div>
+
+      <div class="row">
+        <label for="pointColor">Цвет точечного света</label>
+        <input id="pointColor" type="color" value="#ff88aa" />
+      </div>
+
+      <div class="row">
+        <label for="objectColor">Цвет пирамиды</label>
+        <input id="objectColor" type="color" value="#44aa88" />
+      </div>
+    </div>
+
+    <canvas id="c"></canvas>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
