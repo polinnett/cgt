@@ -21,10 +21,46 @@ html, body {
   z-index: 10;
   background: rgba(20, 20, 20, 0.75);
   color: white;
-  padding: 12px 12px;
+  padding: 12px;
   border-radius: 12px;
-  width: 260px;
+  width: 280px;
   backdrop-filter: blur(6px);
+}
+
+.ui-title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ui-divider {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  margin: 12px 0;
+}
+
+.ui-hint {
+  font-size: 12px;
+  opacity: 0.85;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.ui-selected {
+  font-size: 12px;
+  opacity: 0.85;
+  margin: 10px 0 6px 0;
+}
+
+.ui-details {
+  margin-top: 6px;
+}
+
+.ui-summary {
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.9;
 }
 
 .row {
@@ -37,7 +73,7 @@ html, body {
 
 .row label {
   grid-column: 1 / 3;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.9;
   margin-bottom: 2px;
 }
@@ -51,3 +87,55 @@ html, body {
   width: 3.5em;
   text-align: right;
 }
+
+.btn-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 8px;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 12px;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+button.active {
+  background: rgba(255,255,255,0.28);
+}
+
+.ui-subtitle {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.triple {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.triple input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 8px;
+  background: rgba(0,0,0,0.25);
+  color: white;
+}
+
+.triple input:disabled {
+  opacity: 0.45;
+}
+
